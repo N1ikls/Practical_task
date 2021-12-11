@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-
+@import "./varibalse.scss";
 .buttons {
   background: #ffffff;
   border-radius: 40px;
@@ -8,8 +8,6 @@
   display: flex;
 }
 .tittle__items {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -32,6 +30,71 @@
 .container {
   margin-left: 50px;
 }
+
 .buttons__type {
-  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 215px;
+}
+.buttons__type:first-child {
+  margin-top: 50px;
+}
+.buttons__type:not(:last-child) {
+  margin-bottom: 15px;
+}
+.border {
+}
+.type {
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* 4 */
+
+  color: #c1c8d7;
+}
+/* перемеенные не работают незнаю почему*/
+.button {
+  padding: 12px 25px;
+  background: #4690ff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.type__column {
+  height: 70%;
+}
+.border {
+  border-bottom: 1px solid #dddddd;
+}
+.button--hover:hover {
+  background: #639ef8;
+  cursor: pointer;
+}
+.button--disabled:disabled {
+  background: #bfd8fc;
+}
+.button--secondary {
+  background: #ffffff;
+  color: #4690ff;
+  border: 1px solid #4690ff;
+}
+.button--secondary--hover:hover {
+  background: #f1f7ff;
+  color: #639ef8;
+  border-color: #639ef8;
+}
+.button--secondary:disabled {
+  opacity: 0.3;
+  border-color: #4690ff;
 }
