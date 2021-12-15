@@ -1,10 +1,12 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-@import "./varibalse.scss";
 .buttons {
   background: #ffffff;
   border-radius: 40px;
   min-width: 622px;
   min-height: 445px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .tittle__items {
@@ -15,11 +17,14 @@
   margin-top: 42px;
   margin-right: 10px;
 }
-
 .buttons__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
   flex: 0 1 50%;
 }
 .buttons__tittle--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .tittle__items--color {
@@ -30,10 +35,15 @@
 .container {
   margin-left: 50px;
 }
-
 .buttons__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 215px;
 }
@@ -43,21 +53,13 @@
 .type__items:not(:last-child) {
   margin-bottom: 15px;
 }
-.border {
-}
 .type {
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
-
   letter-spacing: 1px;
   text-transform: uppercase;
-
-  /* 4 */
-
   color: #c1c8d7;
 }
-/* перемеенные не работают незнаю почему*/
 .button {
   padding: 12px 25px;
   background: #4690ff;
@@ -65,7 +67,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   text-align: center;
   cursor: pointer;
   color: #ffffff;
@@ -105,14 +106,11 @@
   background: #e4f0ff;
   border: 1px solid #2a7bf5;
 }
-/*---------------Линия---------------------*/
-
-.type__items:not(:last-child)::after {
+.type__items:not(:last-child):after {
   content: "";
   display: block;
   max-width: 215px;
   margin-top: 15px;
   height: 1px;
   background-color: #dddddd;
-  
 }
