@@ -40,11 +40,11 @@
 .type__items:first-child {
   margin-top: 50px;
 }
+
 .type__items:not(:last-child) {
   margin-bottom: 15px;
 }
-.border {
-}
+
 .type {
   font-size: 12px;
   line-height: 14px;
@@ -114,5 +114,4 @@
   margin-top: 15px;
   height: 1px;
   background-color: #dddddd;
-  
 }
